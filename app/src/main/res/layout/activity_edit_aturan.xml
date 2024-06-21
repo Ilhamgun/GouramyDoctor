@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    tools:context=".adminUI.Aturan.EditAturan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Kode Aturan"/>
+
+        <EditText
+            android:id="@+id/kodeAturan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:padding="14dp"
+            android:textSize="15sp"
+            android:background="@drawable/custom_edittext_disabled"
+            android:hint="Kode Aturan"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Nama Penyakit"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="30dp"
+            android:padding="14dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_edittext">
+
+            <Spinner
+                android:id="@+id/spinnerPenyakit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:hint="Pilih Penyakit"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Gejala Penyakit"/>
+
+        <LinearLayout
+            android:id="@+id/spinnerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <Button
+            android:onClick="addItem"
+            android:id="@+id/tambahGejala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Tambah Gejala"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/add" />
+
+        <Button
+            android:onClick="saveData"
+            android:id="@+id/simpanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="15dp"
+            android:padding="14dp"
+            android:text="Simpan"/>
+
+    </LinearLayout>
+
+</ScrollView>

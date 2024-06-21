@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userUI.UserDetailGejala">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/ivGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <VideoView
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/vvGejala"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/tvNamaGejala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:text="Gejala ikan gurame"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</ScrollView>

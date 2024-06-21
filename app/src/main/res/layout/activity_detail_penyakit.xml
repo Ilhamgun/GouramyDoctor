@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bright_grey"
+    tools:context=".adminUI.Penyakit.DetailPenyakit">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:src="@drawable/edit"
+        app:tint="@color/white"
+        android:layout_margin="40dp"
+        android:contentDescription="Edit Penyakit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Kode Penyakit"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                android:elevation="16dp">
+
+                <TextView
+                    android:id="@+id/kodePenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="14dp"
+                    android:textSize="15sp"
+                    android:hint="Kode Penyakit"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Nama Penyakit"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                android:elevation="16dp">
+
+                <TextView
+                    android:id="@+id/namaPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="14dp"
+                    android:textSize="15sp"
+                    android:hint="Nama Penyakit"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Deskripsi Penyakit"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                android:elevation="16dp">
+
+                <TextView
+                    android:id="@+id/deskripsiPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="14dp"
+                    android:textSize="15sp"
+                    android:hint="Deskripsi Penyakit"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="Solusi Penanggulangan Penyakit"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="16dp">
+
+                <TextView
+                    android:id="@+id/solusiPenyakit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="14dp"
+                    android:textSize="15sp"
+                    android:hint="Solusi Penanggulangan Penyakit"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

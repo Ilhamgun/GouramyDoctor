@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="keyakinan_array">
+        <item>Tidak</item>
+        <item>Tidak Tahu</item>
+        <item>Sedikit Yakin</item>
+        <item>Cukup Yakin</item>
+        <item>Yakin</item>
+        <item>Sangat Yakin</item>
+    </string-array>
+</resources>

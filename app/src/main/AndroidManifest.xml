@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GouramyDoctor"
+        tools:targetApi="31">
+        <activity
+            android:name=".userUI.UserDetailGejala"
+            android:exported="false"
+            android:label="Detail Gejala"/>
+        <activity
+            android:name=".userUI.DaftarGejala"
+            android:exported="false"
+            android:label="Daftar Gejala"/>
+        <activity
+            android:name=".userUI.UbahAkun"
+            android:exported="false"
+            android:label="@string/title_activity_ubah_akun"
+            android:theme="@style/Theme.GouramyDoctor" />
+        <activity
+            android:name=".userUI.UserDetailPenyakit"
+            android:label="Detail Penyakit"
+            android:exported="false" />
+        <activity
+            android:name=".userUI.DaftarPenyakit"
+            android:label="Daftar Penyakit"
+            android:exported="false" />
+        <activity
+            android:name=".userUI.DetailRiwayat"
+            android:exported="false"
+            android:label="Detail Riwayat" />
+        <activity
+            android:name=".adminUI.Aturan.EditAturan"
+            android:exported="false"
+            android:label="Edit Aturan" />
+        <activity
+            android:name=".adminUI.Aturan.UploadAturan"
+            android:exported="false"
+            android:label="Upload Aturan" />
+        <activity
+            android:name=".adminUI.Penyakit.DetailPenyakit"
+            android:exported="false"
+            android:label="Detail Penyakit" />
+        <activity
+            android:name=".adminUI.Penyakit.EditPenyakit"
+            android:exported="false"
+            android:label="Edit Penyakit" />
+        <activity
+            android:name=".adminUI.Gejala.EditGejala"
+            android:exported="false"
+            android:label="Edit Gejala" />
+        <activity
+            android:name=".adminUI.Penyakit.UploadPenyakit"
+            android:exported="false"
+            android:label="Upload Penyakit" />
+        <activity
+            android:name=".adminUI.AdminBantuan"
+            android:exported="false"
+            android:label="Bantuan" />
+        <activity
+            android:name=".adminUI.Aturan.AdminAturan"
+            android:exported="false"
+            android:label="Menu Aturan" />
+        <activity
+            android:name=".adminUI.Penyakit.AdminPenyakit"
+            android:exported="false"
+            android:label="Menu Penyakit" />
+        <activity
+            android:name=".adminUI.Gejala.UploadGejala"
+            android:exported="false"
+            android:label="Tambah Gejala" />
+        <activity
+            android:name=".adminUI.Gejala.AdminGejala"
+            android:exported="false"
+            android:label="Menu Gejala" />
+        <activity
+            android:name=".adminUI.AdminMenu"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".userUI.Profil"
+            android:exported="false"
+            android:label="Profil Pengguna" />
+        <activity
+            android:name=".userUI.Register"
+            android:exported="false" />
+        <activity
+            android:name=".userUI.Login"
+            android:exported="false" />
+        <activity
+            android:name=".userUI.TentangKami"
+            android:exported="false"
+            android:label="Tentang Kami"/>
+        <activity
+            android:name=".userUI.RiwayatDiagnosa"
+            android:exported="false"
+            android:label="Riwayat Diagnosa" />
+        <activity
+            android:name=".userUI.Bantuan"
+            android:exported="false"
+            android:label="Bantuan" />
+        <activity
+            android:name=".userUI.Diagnosa"
+            android:exported="false"
+            android:label="Diagnosa" />
+        <activity
+            android:name=".userUI.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".userUI.Onboarding"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".userUI.HasilDiagnosa"
+            android:exported="false"
+            android:label="Hasil Diagnosa" />
+        <activity
+            android:name=".userUI.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+    </application>
+
+</manifest>
